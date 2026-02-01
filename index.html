@@ -7,37 +7,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css" />
-    <script scr="index.js"></script>
     <title>Weather app</title>
+    <script src="eea6ff3f83446t880010aod1f92b9fab"></script>
 
-</head>
+    </head>
 <body>
   <div class="weather-app">
   <header>  
-    <form >
-      <input type="search" placeholder="Enter a city..."  required/>
-      <input type="submit"  value="search"/>
+    <form  class="search-form" id="search-form">
+      <input type="search" placeholder="Enter a city..."  required
+      id="search-form-input"
+      class="search-form-input"/>
+      <input type="submit"  value="search" class="search-form-button"/>
     </form>
   </header>
-    <main>
-      <div class="weather-app-data">
-        <div>
-          <h1 class="weather-app-city">Paris</h1>
-          <p class="weather-app-details">
-            Tuesday 14:49, scattered clouds
-            <br />
-            Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
-          </p>
-        </div>
-        <div class="weather-app-temperature-container">
-          <div class="weather-app-icon">🌤️</div>
-          <div class="weather-app-temperature">12</div>
-          <div class="weatehr-app-unit">°C</div>
-        </div>
-      </div>
+  <main>
+    <div>
+      <h1 id="city">Paris</h1>
+      <p>
+        Tuesday 14:49, scattered clouds
+        <br />
+        Humidity: 66%, Wind: 3.13km/h
+      </p>
+    </div>
+    <div>🌤️ 12°C</div>
   </main>
-
-    
     <footer>
       <p>
         This project was coded by
@@ -53,5 +47,6 @@
       </p>
     </footer>    
   </div>
+  <script src="./src/index.js"></script>
 </body>
-</html>
+</html>  
