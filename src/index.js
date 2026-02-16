@@ -11,12 +11,13 @@ let date = new Date(response.data.time * 1000);
 
   cityElement.innerHTML = response.data.city;
 
-  timeElement.innerHTML = `${(date.Day())} ${date.getHours()} : ${date.getMinutes}`;
+  timeElement.innerHTML = `${date.getDay() } ${ date.getHours() } : ${date.getMinutes()}`;
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
 }
+
 
 function formatDate(date) {
   let day = date.getDay();
@@ -34,6 +35,9 @@ let days = [
 return " Tuesday 18:48";
 }
 
+function formatDate(date) {
+  return
+}
 
 function searchCity(city) {
   let apiKey = "eea6ff3f83446t880010aod1f92b9fab";
